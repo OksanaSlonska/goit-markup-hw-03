@@ -230,14 +230,12 @@ img {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
-  
- 
+  mb72 
 }
 
 .team-list {
   display: flex;
   gap: 24px;
-  padding-top: 72px;
 }
 
 .team-item {
@@ -283,14 +281,14 @@ img {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
-  
+  margin-bottom: 72px;
 }
 
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
-  padding-top: 72px;
+  
 }
 
 .portfolio-item {
