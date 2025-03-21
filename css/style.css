@@ -31,6 +31,10 @@ button {
   cursor: pointer;
 }
 
+img {
+  display: block;
+}
+
 /*----commom-----*/
 
 .container {
@@ -129,7 +133,6 @@ button {
 
 /*-----Hero-----*/
 
-
 .hero {
   background-color: #2e2f42;
   padding-top: 188px;
@@ -160,7 +163,9 @@ button {
   display: block;
   padding: 16px 32px;
   margin: 0 auto;
-  
+  min-width: 169px;
+  height: 56px;
+  border: none;
 }
 
 .hero-button:hover,
@@ -169,6 +174,19 @@ button {
 }
 
 /*------feature------*/
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .feature-list {
   
@@ -224,7 +242,9 @@ button {
 .team-item {
   background-color: #fff;
   flex-basis: calc((100% - 72px) / 4);
-  
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background: #fff;
 }
 
 .team-suptitle {
@@ -234,8 +254,6 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  padding-top: 32px;
-  padding-bottom: 8px;
 }
 
 .team-text {
@@ -245,14 +263,12 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
-  padding-bottom: 32px;
-    
+     
 }
 
 .team-fhoto {
-  border-radius: 0 0 4px 4px;
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-  background: #fff;
+  padding: 32px 16px;
+ 
 }
 
 /*------portfolio-------*/
@@ -265,13 +281,14 @@ button {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
-  padding-bottom: 72px;
+  
 }
 
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
+  padding-top: 72px;
 }
 
 .portfolio-item {
@@ -285,9 +302,7 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  padding-top: 32px;
-  margin-bottom: 8px;
-}
+  }
 
 .portfolio-text {
   font-weight: 400;
@@ -295,14 +310,13 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  margin-bottom: 16px;
 }
 
 .fhoto {
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
-
+  padding: 32px 16px;
 }
 
 
@@ -322,7 +336,8 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-text {
@@ -332,8 +347,7 @@ button {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
-  margin-top: 16px;
-}
+  }
 
 .footer-logo-accent {
   color: #f4f4fd;
